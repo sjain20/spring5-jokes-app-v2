@@ -1,4 +1,4 @@
-package com.learning.spring.chucknoris.ChuckNorisJokesApp.Model;
+package com.learning.spring.chucknoris.ChuckNorisJokesApp.Controller;
 
 import com.learning.spring.chucknoris.ChuckNorisJokesApp.Services.ChuckNorisJokesService;
 import org.springframework.stereotype.Controller;
@@ -6,11 +6,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class ChuckNorisJokesModel {
+public class ChuckNorisJokesController {
 
     ChuckNorisJokesService chuckNorisJokesService;
 
-    public ChuckNorisJokesModel(ChuckNorisJokesService chuckNorisJokesService) {
+    public ChuckNorisJokesController(ChuckNorisJokesService chuckNorisJokesService) {
         this.chuckNorisJokesService = chuckNorisJokesService;
     }
 
